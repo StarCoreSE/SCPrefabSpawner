@@ -62,12 +62,6 @@ namespace Klime.spawnmytheprefab
                 }
             }
 
-            IMyFaction admFaction = MyAPIGateway.Session.Factions.TryGetFactionByTag("ADM");
-            if (admFaction == null)
-            {
-                return; // ADM faction not found, cannot assign ownership
-            }
-
             for (int i = 0; i < spawnCount; i++)
             {
                 // Check if the maximum blocker grids limit has been reached
@@ -121,20 +115,6 @@ namespace Klime.spawnmytheprefab
                     if (randomPrefab.Contains("blocker"))
                     {
                         existingBlockerGridCount++;
-                    }
-
-                    // Assign ownership to the ADM faction
-                    IMyEntity spawnedPrefab = MyAPIGateway.Entities.GetEntityByName(randomPrefab);
-                    if (spawnedPrefab != null)
-                    {
-                        IMyCubeGrid prefabGrid = spawnedPrefab as IMyCubeGrid;
-                        if (prefabGrid != null)
-                        {
-                            if (prefabGrid.BigOwners.Count == 0)
-                            {
-                                prefabGrid.ChangeGridOwnership(admFaction.FactionId, MyOwnershipShareModeEnum.Faction);
-                            }
-                        }
                     }
                 }
             }
