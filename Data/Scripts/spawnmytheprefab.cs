@@ -34,8 +34,8 @@ namespace Klime.spawnmytheprefab
         "blockersclogo",
         "blockertld",
         "blockeruef",
-        "blockersclogo",
-        "blockersclogo",
+        "blockercyb",
+        "blockermcr2",
         // Add more prefab names here
     };
 
