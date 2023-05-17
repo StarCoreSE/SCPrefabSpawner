@@ -26,16 +26,16 @@ namespace Klime.spawnmytheprefab
         {
             List<string> prefabList = new List<string>()
     {
-        "blocker1", // Add your prefab names here
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
+        "blockercyb", // Add your prefab names here
+        "blockerkst",
+        "blockermcr",
+        "blockermcr2",
+        "blockersclogo",
+        "blockersclogo",
+        "blockertld",
+        "blockeruef",
+        "blockerStarcore Simple Station",
+        "blockerStarcore Simple Station",
         // Add more prefab names here
     };
 
@@ -44,7 +44,7 @@ namespace Klime.spawnmytheprefab
 
             Vector3D origin = new Vector3D(0, 0, 1);
             double spawnRadius = 5000; // Maximum spawn radius in meters
-            double minSpawnDistance = 1000; // Minimum spawn distance from the origin in meters
+            double minSpawnDistance = 2000; // Minimum spawn distance from the origin in meters
 
             int existingBlockerGridCount = 0;
 
