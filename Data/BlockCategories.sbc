@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Blockers</DisplayName>
+      <Name>Blockers</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+		<string>BatteryBlock/200x200 Square</string>
+		<string>BatteryBlock/100x100 Square</string>
+		<string>BatteryBlock/50x50 Square</string>
+		<string>BatteryBlock/200x100 Rectangle</string>
+		<string>BatteryBlock/200x50 Rectangle</string>
+		<string>BatteryBlock/100x50 Rectangle</string>
+		
+		
+
+
+      </ItemIds>
+    </Category>
+    
+  </CategoryClasses>
+</Definitions>

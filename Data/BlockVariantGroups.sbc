@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+
+        <!-- Armor -->
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="BlockerCubeGroup" />
+            <Icon>Textures\fake.dds</Icon>
+            <DisplayName>200x200 Square</DisplayName>
+            <Description></Description>
+            <Blocks>
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="200x200 Square" />	
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="100x100 Square" />
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="50x50 Square" />
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="200x100 Rectangle" />				
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="200x50 Rectangle" />				
+				<Block Type="MyObjectBuilder_BatteryBlock" Subtype="100x50 Rectangle" />	
+
+				
+				
+				
+            </Blocks>
+        </BlockVariantGroup>
+        
+    </BlockVariantGroups>
+</Definitions>

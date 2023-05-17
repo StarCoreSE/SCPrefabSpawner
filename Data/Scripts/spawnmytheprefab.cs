@@ -7,46 +7,63 @@ using VRage.Game.Components;
 using VRage.Game.ModAPI;
 using VRageMath;
 
-
 namespace Klime.spawnmytheprefab
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     public class spawnmytheprefab : MySessionComponentBase
     {
-        public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
+        private Random random;
+
+        public override void BeforeStart()
         {
-            MyAPIGateway.Utilities.MessageEntered += UtilitiesOnMessageEntered;
+            random = new Random();
+            SpawnRandomPrefab();
         }
 
-        private void UtilitiesOnMessageEntered(string messagetext, ref bool sendtoothers)
+        private void SpawnRandomPrefab()
         {
-            try
-            {
-                if (messagetext.StartsWith("/prefab "))
-                {
-                    if (messagetext.Length > 8)
-                    {
-                        string words = "";
-                        words = messagetext.Substring(7);
-                        if (words != null  && words.Length > 0)
-                        {
-                            MyVisualScriptLogicProvider.SpawnPrefab(words, MyAPIGateway.Session.Player.GetPosition() + MyAPIGateway.Session.Player.Character.WorldMatrix.Forward * 100,
-                                                                MyAPIGateway.Session.Player.Character.WorldMatrix.Forward, MyAPIGateway.Session.Player.Character.WorldMatrix.Up);
-                            sendtoothers = false;
-                        }
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                MyAPIGateway.Utilities.ShowMessage("", e.Message);
-            }
+            List<string> prefabList = new List<string>()
+    {
+        "blocker1", // Add your prefab names here
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        // Add more prefab names here
+    };
 
+            int prefabCount = prefabList.Count;
+            int spawnCount = 10; // Number of prefabs to spawn
+
+            Vector3D origin = new Vector3D(0, 0, 0);
+
+            for (int i = 0; i < spawnCount; i++)
+            {
+                int randomIndex = random.Next(prefabCount);
+                string randomPrefab = prefabList[randomIndex];
+
+                int spawnRange = 5000; // Range of 5000 in each direction
+
+                double x = random.NextDouble() * spawnRange * 2 - spawnRange;
+                double y = random.NextDouble() * spawnRange * 2 - spawnRange;
+                double z = random.NextDouble() * spawnRange * 2 - spawnRange;
+
+                Vector3D spawnPosition = new Vector3D(x, y, z);
+
+                Vector3D direction = Vector3D.Normalize(origin - spawnPosition);
+                Vector3D up = Vector3D.Normalize(spawnPosition);
+
+                MyVisualScriptLogicProvider.SpawnPrefab(randomPrefab, spawnPosition, direction, up);
+            }
         }
 
         protected override void UnloadData()
         {
-            MyAPIGateway.Utilities.MessageEntered -= UtilitiesOnMessageEntered;
         }
     }
 }

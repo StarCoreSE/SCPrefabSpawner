@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+	
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>200x200 Square</SubtypeId>
+      </Id>
+      <DisplayName>200x200 Square</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="80" y="80" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\200sq.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />	  	  	          
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="80" EndY="80" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  <UseModelIntersection>true</UseModelIntersection>
+	  <DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+	
+	        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>Sphere</SubtypeId>
+      </Id>
+      <DisplayName>Sphere</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="60" y="60" z="60" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\150sphere2.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />	  	  	          
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="80" EndY="80" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  <UseModelIntersection>true</UseModelIntersection>
+	  <DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>100x100 Square</SubtypeId>
+      </Id>
+      <DisplayName>100x100 Square</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="40" y="40" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\100sq.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="40" EndY="40" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="40" EndY="40" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="40" EndY="40" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="40" EndY="40" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="40" EndY="40" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="40" EndY="40" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  	  <UseModelIntersection>true</UseModelIntersection>
+	<DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>	
+	
+	
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>50x50 Square</SubtypeId>
+      </Id>
+      <DisplayName>50x50 Square</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="20" y="20" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\50sq.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="20" EndY="20" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="20" EndY="20" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="20" EndY="20" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="20" EndY="20" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="20" EndY="20" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="20" EndY="20" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  	  <UseModelIntersection>true</UseModelIntersection>
+	<DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+	
+	
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>200x100 Rectangle</SubtypeId>
+      </Id>
+      <DisplayName>200x100 Rectangle</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="80" y="40" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\100x200.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="80" EndY="80" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  	  <UseModelIntersection>true</UseModelIntersection>
+	<DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>200x50 Rectangle</SubtypeId>
+      </Id>
+      <DisplayName>200x50 Rectangle</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="80" y="20" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\50x200.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  	  	          <Component Subtype="BIGCHUNGUS" Count="1" />
+	  <Component Subtype="ADMINKIT" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="80" EndY="80" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  	  <UseModelIntersection>true</UseModelIntersection>
+	<DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>100x50 Rectangle</SubtypeId>
+      </Id>
+      <DisplayName>100x50 Rectangle</DisplayName>
+      <Icon>Textures\Fake.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>Cube</BlockTopology>
+      <Size x="40" y="20" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\50x100.mwm</Model>
+      <Components>
+	  <Component Subtype="SteelPlate" Count="100" />
+	  <Component Subtype="ADMINKIT" Count="1" />
+	  <Component Subtype="BIGCHUNGUS" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Front" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="80" EndY="80" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Top" StartX="0" StartY="0" EndX="80" EndY="80" />
+		<MountPoint Side="Back" StartX="0" StartY="0" EndX="80" EndY="80" />
+      </MountPoints>
+	  	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>12</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>12</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>3</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+			            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+   	  <HasPhysics>true</HasPhysics>
+	  	  <UseModelIntersection>true</UseModelIntersection>
+	<DeformationRatio>0</DeformationRatio>
+	  <GeneralDamageMultiplier>0.0</GeneralDamageMultiplier>
+      <PCU>1</PCU>
+    </Definition>
+	
+
+	
+
+
+  </CubeBlocks>
+  </Definitions>
