@@ -5,6 +5,8 @@ using Sandbox.ModAPI;
 using VRage.Game;
 using VRage.Game.Components;
 using VRage.Game.ModAPI;
+using VRage.ModAPI;
+using VRage.Utils;
 using VRageMath;
 
 namespace Klime.spawnmytheprefab
@@ -23,43 +25,123 @@ namespace Klime.spawnmytheprefab
         private void SpawnRandomPrefab()
         {
             List<string> prefabList = new List<string>()
-    {
-        "blocker1", // Add your prefab names here
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        "blocker1",
-        // Add more prefab names here
-    };
+            {
+                "blocker1", // Add your prefab names here
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                "blocker1",
+                // Add more prefab names here
+            };
 
             int prefabCount = prefabList.Count;
-            int spawnCount = 10; // Number of prefabs to spawn
+            int spawnCount = 5; // Number of prefabs to spawn
 
-            Vector3D origin = new Vector3D(0, 0, 0);
+            Vector3D origin = new Vector3D(0, 0, 1);
+            double spawnRadius = 5000; // Maximum spawn radius in meters
+            double minSpawnDistance = 1000; // Minimum spawn distance from the origin in meters
 
             for (int i = 0; i < spawnCount; i++)
             {
                 int randomIndex = random.Next(prefabCount);
                 string randomPrefab = prefabList[randomIndex];
 
-                int spawnRange = 5000; // Range of 5000 in each direction
+                Vector3D spawnPosition = Vector3D.Zero; // Initialize spawnPosition with a default value
+                bool isValidSpawn = false;
 
-                double x = random.NextDouble() * spawnRange * 2 - spawnRange;
-                double y = random.NextDouble() * spawnRange * 2 - spawnRange;
-                double z = random.NextDouble() * spawnRange * 2 - spawnRange;
+                int maxAttempts = 10; // Maximum number of attempts to find a valid spawn position
+                int currentAttempt = 0;
 
-                Vector3D spawnPosition = new Vector3D(x, y, z);
+                do
+                {
+                    currentAttempt++;
 
-                Vector3D direction = Vector3D.Normalize(origin - spawnPosition);
-                Vector3D up = Vector3D.Normalize(spawnPosition);
+                    if (currentAttempt > maxAttempts)
+                    {
+                        break; // Break the loop if unable to find a valid spawn position
+                    }
 
-                MyVisualScriptLogicProvider.SpawnPrefab(randomPrefab, spawnPosition, direction, up);
+                    // Generate a random position within the spawnRadius
+                    Vector3D randomPosition = new Vector3D(
+                        random.NextDouble() * spawnRadius * 2 - spawnRadius,
+                        random.NextDouble() * spawnRadius * 2 - spawnRadius,
+                        random.NextDouble() * spawnRadius * 2 - spawnRadius
+                    );
+
+                    spawnPosition = origin + randomPosition;
+
+                    // Check distance to existing grids, origin, and asteroids
+                    isValidSpawn = CheckGridDistance(spawnPosition, minSpawnDistance) &&
+                                   Vector3D.Distance(origin, spawnPosition) >= minSpawnDistance &&
+                                   CheckAsteroidDistance(spawnPosition, minSpawnDistance);
+                }
+                while (!isValidSpawn);
+
+                if (isValidSpawn)
+                {
+                    Vector3D direction = Vector3D.Normalize(origin - spawnPosition);
+                    Vector3D up = Vector3D.Normalize(spawnPosition);
+
+                    MyVisualScriptLogicProvider.SpawnPrefab(randomPrefab, spawnPosition, direction, up);
+                }
             }
+        }
+
+        private bool CheckGridDistance(Vector3D spawnPosition, double minDistance)
+        {
+            // Get all entities in the game world
+            HashSet<IMyEntity> entities = new HashSet<IMyEntity>();
+            MyAPIGateway.Entities.GetEntities(entities);
+
+            foreach (IMyEntity entity in entities)
+            {
+                IMyCubeGrid grid = entity as IMyCubeGrid;
+                if (grid != null)
+                {
+                    double distance = Vector3D.Distance(spawnPosition, grid.GetPosition());
+
+                    if (distance < minDistance)
+                    {
+                        return false; // Distance is too close, not a valid spawn position
+                    }
+                }
+            }
+
+            // Check distance from origin
+            double distanceFromOrigin = Vector3D.Distance(spawnPosition, Vector3D.Zero);
+            if (distanceFromOrigin < minDistance)
+            {
+                return false; // Distance from origin is too close, not a valid spawn position
+            }
+
+            return true; // Valid spawn position
+        }
+
+        private bool CheckAsteroidDistance(Vector3D spawnPosition, double minDistance)
+        {
+            // Get all asteroid entities in the game world
+            List<IMyVoxelBase> voxels = new List<IMyVoxelBase>();
+            MyAPIGateway.Session.VoxelMaps.GetInstances(voxels);
+
+            foreach (IMyVoxelBase voxel in voxels)
+            {
+                if (voxel is IMyVoxelMap)
+                {
+                    BoundingBoxD voxelBox = voxel.PositionComp.WorldAABB;
+
+                    if (voxelBox.Contains(spawnPosition) != ContainmentType.Disjoint)
+                    {
+                        return false; // Spawn position is inside an asteroid, not a valid spawn position
+                    }
+                }
+            }
+
+            return true; // Valid spawn position
         }
 
         protected override void UnloadData()
