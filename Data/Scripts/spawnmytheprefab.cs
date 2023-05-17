@@ -25,29 +25,51 @@ namespace Klime.spawnmytheprefab
         private void SpawnRandomPrefab()
         {
             List<string> prefabList = new List<string>()
-            {
-                "blocker1", // Add your prefab names here
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                "blocker1",
-                // Add more prefab names here
-            };
+    {
+        "blocker1", // Add your prefab names here
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        "blocker1",
+        // Add more prefab names here
+    };
 
             int prefabCount = prefabList.Count;
-            int spawnCount = 5; // Number of prefabs to spawn
+            int spawnCount = 10; // Number of prefabs to spawn
 
             Vector3D origin = new Vector3D(0, 0, 1);
             double spawnRadius = 5000; // Maximum spawn radius in meters
             double minSpawnDistance = 1000; // Minimum spawn distance from the origin in meters
 
+            int existingBlockerGridCount = 0;
+
+            // Get all entities in the game world
+            HashSet<IMyEntity> entities = new HashSet<IMyEntity>();
+            MyAPIGateway.Entities.GetEntities(entities);
+
+            // Count the number of grids containing the word "blocker"
+            foreach (IMyEntity entity in entities)
+            {
+                IMyCubeGrid grid = entity as IMyCubeGrid;
+                if (grid != null && grid.DisplayName.Contains("blocker"))
+                {
+                    existingBlockerGridCount++;
+                }
+            }
+
             for (int i = 0; i < spawnCount; i++)
             {
+                // Check if the maximum blocker grids limit has been reached
+                if (existingBlockerGridCount >= 10)
+                {
+                    break; // Stop spawning if the limit has been reached
+                }
+
                 int randomIndex = random.Next(prefabCount);
                 string randomPrefab = prefabList[randomIndex];
 
@@ -88,6 +110,12 @@ namespace Klime.spawnmytheprefab
                     Vector3D up = Vector3D.Normalize(spawnPosition);
 
                     MyVisualScriptLogicProvider.SpawnPrefab(randomPrefab, spawnPosition, direction, up);
+
+                    // Increment the blocker grid count if a new blocker is spawned
+                    if (randomPrefab.Contains("blocker"))
+                    {
+                        existingBlockerGridCount++;
+                    }
                 }
             }
         }

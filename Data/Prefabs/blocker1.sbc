@@ -6,17 +6,17 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>103811261794887410</EntityId>
+          <EntityId>124282177455289192</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
           <PositionAndOrientation>
-            <Position x="-2808.6397934363176" y="288.840304926347" z="-1128.1101945698611" />
-            <Forward x="-0" y="-0" z="-1" />
-            <Up x="0" y="1" z="0" />
+            <Position x="-3433.69654189418" y="-4100.3511559372382" z="1488.797807075709" />
+            <Forward x="0.6183301" y="0.738730133" z="-0.268226773" />
+            <Up x="0.172287941" y="0.205578431" z="0.9633558" />
             <Orientation>
-              <X>0</X>
-              <Y>0</Y>
-              <Z>0</Z>
-              <W>1</W>
+              <X>0.56855</X>
+              <Y>-0.206488535</Y>
+              <Z>-0.271958977</Z>
+              <W>0.7484328</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -24,7 +24,7 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>86191921269052299</EntityId>
+              <EntityId>113574250525019399</EntityId>
               <Min x="-39" y="-39" z="-1" />
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -32,19 +32,64 @@
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
               <Enabled>true</Enabled>
-              <CurrentStoredPower>1.125</CurrentStoredPower>
+              <CurrentStoredPower>3</CurrentStoredPower>
               <ProducerEnabled>true</ProducerEnabled>
               <MaxStoredPower>0</MaxStoredPower>
               <SemiautoEnabled>false</SemiautoEnabled>
               <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
               <ChargeMode>0</ChargeMode>
             </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>LargeBlockSmallGenerator</SubtypeName>
+              <EntityId>89984388424044329</EntityId>
+              <Min x="10" y="37" z="-2" />
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>900</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Capacity>1</Capacity>
+            </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
-          <DisplayName>Large Grid 5615</DisplayName>
+          <DisplayName>blocker1</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <IsRespawnGrid>false</IsRespawnGrid>
           <LocalCoordSys>2</LocalCoordSys>
           <TargetingTargets />
+          <GridPresenceTier>Tier1</GridPresenceTier>
         </CubeGrid>
       </CubeGrids>
       <EnvironmentType>None</EnvironmentType>
