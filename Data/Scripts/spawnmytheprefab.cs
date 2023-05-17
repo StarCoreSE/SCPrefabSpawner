@@ -34,8 +34,8 @@ namespace Klime.spawnmytheprefab
         "blockersclogo",
         "blockertld",
         "blockeruef",
-        "blockerStarcore Simple Station",
-        "blockerStarcore Simple Station",
+        "blockersclogo",
+        "blockersclogo",
         // Add more prefab names here
     };
 
