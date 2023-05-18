@@ -2,48 +2,31 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="blockersclogo" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="blocker" />
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>75175289761276784</EntityId>
+          <EntityId>121310022174755230</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
           <PositionAndOrientation>
-            <Position x="-3031.1380885898334" y="-4034.8425953406454" z="2299.7501688287266" />
-            <Forward x="-3.781364E-08" y="3.065251E-07" z="-1" />
-            <Up x="2.36839681E-09" y="1" z="3.065251E-07" />
+            <Position x="-3346.55020273596" y="-5156.4323978822049" z="728.760547674573" />
+            <Forward x="-0.480961651" y="-0.279499352" z="-0.830997" />
+            <Up x="-0.7184684" y="-0.41756326" z="0.5562769" />
             <Orientation>
-              <X>1.53262548E-07</X>
-              <Y>1.890682E-08</Y>
-              <Z>-1.18419552E-09</Z>
-              <W>1</W>
+              <X>0.144994333</X>
+              <Y>0.2519487</Y>
+              <Z>0.8293119</Z>
+              <W>0.47722134</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
-          <ComponentContainer>
-            <Components>
-              <ComponentData>
-                <TypeId>MyModStorageComponent</TypeId>
-                <Component xsi:type="MyObjectBuilder_ModStorageComponent">
-                  <Storage>
-                    <dictionary>
-                      <item>
-                        <Key>3ffd5fcf-e241-4f07-99ef-907509d40268</Key>
-                        <Value>CmAKDw0uAGFCJcmkqEM9yrYawRIPDQAAgL8lvENNJD0YP1GmGg8N2ENNpCUAAIC/PQAAIDQl0FF1RCokOWM3Nzk1YjAtN2JiMC0xY2Y2LWE2ZGUtMTJhNDM2ZWNlNzFhMAAKYAoPDet/hEIlABynQz0OOoZAEg8NAACAPyW8Q02kPRg/USYaDw2qQ02kJQAAgL89AQCAsyXQUXVEKiQ5Yzc3OTViMC03YmIwLTFjZjYtYTZkZS0xMmE0MzZlY2U3MWEwAA==</Value>
-                      </item>
-                    </dictionary>
-                  </Storage>
-                </Component>
-              </ComponentData>
-            </Components>
-          </ComponentContainer>
           <GridSizeEnum>Large</GridSizeEnum>
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>104365929070185328</EntityId>
-              <Min x="23" y="215" z="-320" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>77266835503207355</EntityId>
+              <Min x="240" y="-2" z="1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -61,9 +44,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>110705278229502880</EntityId>
-              <Min x="23" y="135" z="-320" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>141122272848026434</EntityId>
+              <Min x="160" y="-2" z="1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -81,9 +64,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>75034687242861508</EntityId>
-              <Min x="23" y="215" z="-240" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>81071272948548988</EntityId>
+              <Min x="240" y="-2" z="81" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -101,9 +84,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>112302126737771313</EntityId>
-              <Min x="23" y="55" z="-320" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>140917491763426153</EntityId>
+              <Min x="80" y="-2" z="1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -121,9 +104,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>114727876859876951</EntityId>
-              <Min x="23" y="135" z="-240" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>74151227498963597</EntityId>
+              <Min x="160" y="-2" z="81" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -141,9 +124,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>79355232499129974</EntityId>
-              <Min x="23" y="215" z="-160" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>125734016438711529</EntityId>
+              <Min x="240" y="-2" z="161" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -161,9 +144,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>124557221476879641</EntityId>
-              <Min x="23" y="-25" z="-320" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>119351315235065556</EntityId>
+              <Min x="0" y="-2" z="1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -181,9 +164,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>138765026625287872</EntityId>
-              <Min x="23" y="55" z="-240" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>98449511288012082</EntityId>
+              <Min x="80" y="-2" z="81" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -201,9 +184,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>137675604137353933</EntityId>
-              <Min x="23" y="135" z="-160" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>105535115304824230</EntityId>
+              <Min x="160" y="-2" z="161" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -221,9 +204,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>90404486502187492</EntityId>
-              <Min x="23" y="215" z="-80" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>120513078717548350</EntityId>
+              <Min x="240" y="-2" z="241" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -241,9 +224,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>98096930153403825</EntityId>
-              <Min x="23" y="-25" z="-240" />
-              <BlockOrientation Forward="Right" Up="Forward" />
+              <EntityId>121148129238774260</EntityId>
+              <Min x="0" y="-2" z="81" />
+              <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -261,9 +244,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>99395137895543963</EntityId>
-              <Min x="23" y="55" z="-160" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>126087385658361466</EntityId>
+              <Min x="80" y="-2" z="161" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -281,9 +264,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>137238932668516337</EntityId>
-              <Min x="23" y="135" z="-80" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>117352660563354839</EntityId>
+              <Min x="160" y="-2" z="241" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -301,9 +284,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>105538224006834915</EntityId>
-              <Min x="23" y="-25" z="-160" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>122996068778378327</EntityId>
+              <Min x="0" y="-2" z="161" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -321,9 +304,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>72771883485232181</EntityId>
-              <Min x="23" y="55" z="-80" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>75001297482345040</EntityId>
+              <Min x="80" y="-2" z="241" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -341,9 +324,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>131442715403093189</EntityId>
-              <Min x="23" y="-25" z="-80" />
-              <BlockOrientation Forward="Left" Up="Backward" />
+              <EntityId>89031973084367422</EntityId>
+              <Min x="0" y="-2" z="241" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -361,9 +344,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>84787876546909984</EntityId>
-              <Min x="23" y="-25" z="0" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>78583000611723720</EntityId>
+              <Min x="0" y="-2" z="321" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -381,9 +364,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>98723338620264366</EntityId>
-              <Min x="23" y="-25" z="80" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>90865945447273808</EntityId>
+              <Min x="0" y="-2" z="401" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -401,9 +384,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>131704288940988605</EntityId>
-              <Min x="23" y="55" z="0" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>134651502061471314</EntityId>
+              <Min x="80" y="-2" z="321" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -421,9 +404,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>109740774077351045</EntityId>
-              <Min x="23" y="-25" z="160" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>128641288848216922</EntityId>
+              <Min x="0" y="-2" z="481" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -441,9 +424,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>104312986813882968</EntityId>
-              <Min x="23" y="55" z="80" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>88408571763688392</EntityId>
+              <Min x="80" y="-2" z="401" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -461,9 +444,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>139479686878766798</EntityId>
-              <Min x="23" y="135" z="0" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>82888765811333075</EntityId>
+              <Min x="160" y="-2" z="321" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -481,9 +464,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>102021765639258534</EntityId>
-              <Min x="23" y="-25" z="240" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>105649277720057671</EntityId>
+              <Min x="0" y="-2" z="561" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -501,9 +484,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>105584973554675140</EntityId>
-              <Min x="23" y="55" z="160" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>105273770490623675</EntityId>
+              <Min x="80" y="-2" z="481" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -521,9 +504,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>111887660320069593</EntityId>
-              <Min x="23" y="135" z="80" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>99526409932212172</EntityId>
+              <Min x="160" y="-2" z="401" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -541,9 +524,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>98953975059889830</EntityId>
-              <Min x="23" y="215" z="0" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>107289600452572812</EntityId>
+              <Min x="240" y="-2" z="321" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -561,9 +544,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>119109641088677844</EntityId>
-              <Min x="23" y="55" z="240" />
-              <BlockOrientation Forward="Left" Up="Down" />
+              <EntityId>113561682924458988</EntityId>
+              <Min x="80" y="-2" z="561" />
+              <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -581,9 +564,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>72646110540744952</EntityId>
-              <Min x="23" y="135" z="160" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>86267500482833291</EntityId>
+              <Min x="160" y="-2" z="481" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -601,9 +584,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>130313462896917806</EntityId>
-              <Min x="23" y="215" z="80" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>120772222786061472</EntityId>
+              <Min x="240" y="-2" z="401" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -621,9 +604,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>79294470112552115</EntityId>
-              <Min x="23" y="135" z="240" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>78175576288463990</EntityId>
+              <Min x="160" y="-2" z="561" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -641,9 +624,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>87276697933929230</EntityId>
-              <Min x="23" y="215" z="160" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>111106969025274617</EntityId>
+              <Min x="240" y="-2" z="481" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -661,9 +644,9 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>200x200 Square</SubtypeName>
-              <EntityId>136479534869331440</EntityId>
-              <Min x="23" y="215" z="240" />
-              <BlockOrientation Forward="Right" Up="Up" />
+              <EntityId>100688490589149171</EntityId>
+              <Min x="240" y="-2" z="561" />
+              <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Neon_Colorable_Lights</SkinSubtypeId>
               <ShowOnHUD>false</ShowOnHUD>
@@ -680,13 +663,12 @@
               <ChargeMode>0</ChargeMode>
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
-          <IsStatic>true</IsStatic>
-          <IsUnsupportedStation>true</IsUnsupportedStation>
-          <DisplayName>blockersclogo</DisplayName>
-          <DestructibleBlocks>false</DestructibleBlocks>
+          <DisplayName>blocker</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
           <IsRespawnGrid>false</IsRespawnGrid>
-          <LocalCoordSys>3</LocalCoordSys>
+          <LocalCoordSys>0</LocalCoordSys>
           <TargetingTargets />
+          <GridPresenceTier>Tier1</GridPresenceTier>
         </CubeGrid>
       </CubeGrids>
       <EnvironmentType>None</EnvironmentType>
