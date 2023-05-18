@@ -98,7 +98,7 @@
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
           <DisplayName>blockercyb</DisplayName>
-          <DestructibleBlocks>true</DestructibleBlocks>
+          <DestructibleBlocks>false</DestructibleBlocks>
           <IsRespawnGrid>false</IsRespawnGrid>
           <LocalCoordSys>0</LocalCoordSys>
           <TargetingTargets />

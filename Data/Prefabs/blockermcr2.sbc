@@ -99,7 +99,7 @@
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
           <DisplayName>blockermcr2</DisplayName>
-          <DestructibleBlocks>true</DestructibleBlocks>
+          <DestructibleBlocks>false</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>
           <IsRespawnGrid>false</IsRespawnGrid>

@@ -681,7 +681,7 @@
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
           <DisplayName>blocker</DisplayName>
-          <DestructibleBlocks>true</DestructibleBlocks>
+          <DestructibleBlocks>false</DestructibleBlocks>
           <IsRespawnGrid>false</IsRespawnGrid>
           <LocalCoordSys>19</LocalCoordSys>
           <TargetingTargets />
