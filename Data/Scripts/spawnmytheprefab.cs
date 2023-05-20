@@ -11,15 +11,13 @@ using VRageMath;
 
 namespace Klime.spawnmytheprefab
 {
+    [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     public class spawnmytheprefab : MySessionComponentBase
     {
         private Random random;
 
         public override void BeforeStart()
         {
-            if (!MyAPIGateway.Multiplayer.IsServer)
-                return;
-
             random = new Random();
             SpawnRandomPrefab();
         }
