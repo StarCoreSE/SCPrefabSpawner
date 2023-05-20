@@ -18,8 +18,11 @@ namespace Klime.spawnmytheprefab
 
         public override void BeforeStart()
         {
-            random = new Random();
-            SpawnRandomPrefab();
+            if (MyAPIGateway.Multiplayer.IsServer)
+            {
+                random = new Random();
+                SpawnRandomPrefab();
+            }
         }
 
         private void SpawnRandomPrefab()
